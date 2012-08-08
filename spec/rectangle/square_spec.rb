@@ -9,6 +9,10 @@ module Rectangle
       it "input should not be negative" do
          Rectangle::Square.area(-1).should == 'input can not be negative'
       end
+
+      it "input should not be null" do
+         Rectangle::Square.area(nil).should == 'input can not be null'
+      end
     end
 
     context "area" do
